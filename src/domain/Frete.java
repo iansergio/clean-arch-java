@@ -1,7 +1,12 @@
+package domain;
+
 public class Frete {
     private Double peso;
     private Double distancia;
     private String tipoCliente;
+
+    public Frete() {
+    }
 
     public Frete(Double peso, Double distancia, String tipoCliente) {
         if (peso == null || peso <= 0) {
@@ -46,13 +51,31 @@ public class Frete {
 
         Double valorTotal = valorBase + valorPeso + valorDistancia;
         Double valorTotalFInal = calcularFreteMinimo(calcularDesconto(valorTotal));
-    
+
         return Math.round(valorTotalFInal * 100.0) / 100.0;
     }
 
-    @Override
-    public String toString() {
-        return "Peso: " + peso + ", Distancia: " + distancia + ", Tipo de Cliente: " + tipoCliente
-                + " \nValor do frete: " + calcularValorTotal();
+    public Double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(Double peso) {
+        this.peso = peso;
+    }
+
+    public Double getDistancia() {
+        return distancia;
+    }
+
+    public void setDistancia(Double distancia) {
+        this.distancia = distancia;
+    }
+
+    public String getTipoCliente() {
+        return tipoCliente;
+    }
+
+    public void setTipoCliente(String tipoCliente) {
+        this.tipoCliente = tipoCliente;
     }
 }
