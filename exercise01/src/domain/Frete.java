@@ -1,4 +1,4 @@
-package domain;
+package exercise01.src.domain;
 
 public class Frete {
     private Double peso;

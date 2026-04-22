@@ -1,3 +1,5 @@
+package exercise01.spaghetti;
+
 import java.util.HashMap;
 import java.util.Map;
 

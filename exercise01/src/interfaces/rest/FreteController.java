@@ -1,9 +1,9 @@
-package interfaces.rest;
+package exercise01.src.interfaces.rest;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import domain.Frete;
+import exercise01.src.domain.Frete;;
 
 public class FreteController {
 
